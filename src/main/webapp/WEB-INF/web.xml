@@ -1,0 +1,428 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+    <display-name>Archetype Created Web Application</display-name>
+
+    <servlet>
+        <servlet-name>LinkServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.LinkServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LinkServlet</servlet-name>
+        <url-pattern>/link.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PatientListServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.PatientListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PatientListServlet</servlet-name>
+        <url-pattern>/bingrenlist.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PatientDetailServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.PatientDetailServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PatientDetailServlet</servlet-name>
+        <url-pattern>/bingren.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NewMessageServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.NewMessageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>NewMessageServlet</servlet-name>
+        <url-pattern>/msglistening.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MessagesListServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.MessagesListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MessagesListServlet</servlet-name>
+        <url-pattern>/messages.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MessagesDetailServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.MessagesDetailServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MessagesDetailServlet</servlet-name>
+        <url-pattern>/msginfos.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TaskHandleServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.TaskHandleServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TaskHandleServlet</servlet-name>
+        <url-pattern>/msginfook.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DocAdviceListServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.DocAdviceListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DocAdviceListServlet</servlet-name>
+        <url-pattern>/yizhu.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrderExecutionServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.OrderExecutionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OrderExecutionServlet</servlet-name>
+        <url-pattern>/yz_zhixingdan.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrderExecutionSaveServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.OrderExecutionSaveServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OrderExecutionSaveServlet</servlet-name>
+        <url-pattern>/Yzzxd_dook.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CheckListServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.CheckListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CheckListServlet</servlet-name>
+        <url-pattern>/jiancha.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InspectionServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.InspectionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InspectionServlet</servlet-name>
+        <url-pattern>/jianyan.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InspectionResultServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.InspectionResultServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InspectionResultServlet</servlet-name>
+        <url-pattern>/jianyan_result.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OperationListServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.OperationListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OperationListServlet</servlet-name>
+        <url-pattern>/shoushu.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NursingListServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.NursingListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>NursingListServlet</servlet-name>
+        <url-pattern>/huli_list.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NursingDescListServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.NursingDescListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>NursingDescListServlet</servlet-name>
+        <url-pattern>/huli_orderok.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NursingTypeServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.NursingTypeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>NursingTypeServlet</servlet-name>
+        <url-pattern>/huli_order.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NursingSaveServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.NursingSaveServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>NursingSaveServlet</servlet-name>
+        <url-pattern>/huli_save.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SpecimenListServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.SpecimenListServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>SpecimenListServlet</servlet-name>
+        <url-pattern>/biaoben.do</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SpecimenSaveServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.SpecimenSaveServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>SpecimenSaveServlet</servlet-name>
+        <url-pattern>/biaobencaiji.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShiftingOfDutyTimeServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.ShiftingOfDutyTimeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShiftingOfDutyTimeServlet</servlet-name>
+        <url-pattern>/jiaojielist.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShiftingOfDutyTimeDetailServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.ShiftingOfDutyTimeDetailServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShiftingOfDutyTimeDetailServlet</servlet-name>
+        <url-pattern>/jiaojieban.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdmissionAssessmentServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.AdmissionAssessmentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AdmissionAssessmentServlet</servlet-name>
+        <url-pattern>/new_pglist.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdmissionAssessmentSaveServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.AdmissionAssessmentSaveServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AdmissionAssessmentSaveServlet</servlet-name>
+        <url-pattern>/pgsave.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DailyAssessmentSaveServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.DailyAssessmentSaveServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DailyAssessmentSaveServlet</servlet-name>
+        <url-pattern>/mrpgsave.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DailyAssessmentServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.DailyAssessmentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DailyAssessmentServlet</servlet-name>
+        <url-pattern>/mrpg_list.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DailyAssessmentListServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.DailyAssessmentListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DailyAssessmentListServlet</servlet-name>
+        <url-pattern>/new_mrpglist.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EducationListServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.EducationListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EducationListServlet</servlet-name>
+        <url-pattern>/new_edulist.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EducationFormServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.EducationFormServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EducationFormServlet</servlet-name>
+        <url-pattern>/eduorder.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EducationFormSaveServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.EducationFormSaveServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EducationFormSaveServlet</servlet-name>
+        <url-pattern>/eduorderok.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CopyrightServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.CopyrightServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CopyrightServlet</servlet-name>
+        <url-pattern>/verinfo.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DBConfigServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.DBConfigServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DBConfigServlet</servlet-name>
+        <url-pattern>/dbconfig.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SystemConfigServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.SystemConfigServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SystemConfigServlet</servlet-name>
+        <url-pattern>/sysconfig.do</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SqlConfigSaveServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.SqlConfigSaveServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SqlConfigSaveServlet</servlet-name>
+        <url-pattern>/sqlconfig.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UploadServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.UploadServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/upload.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CheckVersionServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.CheckVersionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CheckVersionServlet</servlet-name>
+        <url-pattern>/checkversion.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DownLoadServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.DownLoadServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DownLoadServlet</servlet-name>
+        <url-pattern>/download.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DBOperationServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.DBOperationServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DBOperationServlet</servlet-name>
+        <url-pattern>/dboperation.do</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>DocUploadServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.DocUploadServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DocUploadServlet</servlet-name>
+        <url-pattern>/docupload.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DocCheckVersionServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.DocCheckVersionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DocCheckVersionServlet</servlet-name>
+        <url-pattern>/doc_checkversion.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PatientSearchServlet</servlet-name>
+        <servlet-class>com.nursing.servlet.PatientSearchServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PatientSearchServlet</servlet-name>
+        <url-pattern>/br_search.do</url-pattern>
+    </servlet-mapping>
+
+</web-app>

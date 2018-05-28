@@ -1,0 +1,3 @@
+#
+#Sun Oct 15 22:13:41 CST 2017
+SQL=SELECT a.item_id AS itemid,\r\n       a.item_name AS itemname,\r\n       a.flag AS itemtype,\r\n       (SELECT count(*)\r\n          FROM HIS_DICT_ITEM\r\n         WHERE a.dict_id \= 02\r\n           AND SUBSTR(HIS_DICT_ITEM.item_id, 1, 4) \= A.item_id\r\n           AND length(HIS_DICT_ITEM.item_id) \= 6) AS xiaji,\r\n       b.item_value as value,\r\n       a.EXCEPTION_FLAG AS excp\r\n  FROM HIS_DICT_ITEM A, PAT_EVALUATION_M B\r\n WHERE a.dict_id \= 02\r\n   AND length(a.item_id) \= 4\r\n   AND a.item_id > 0108\r\n   AND a.flag < 5\r\n   and a.item_id \= b.item_id(+)\r\n ORDER BY a.item_id ASC
