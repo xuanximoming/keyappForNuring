@@ -1,0 +1,70 @@
+body {
+    margin: 20px;
+}
+
+body,
+td,
+th {
+    font-family: Arial, Helvetica, microsoft yahei, sans-serif;
+    font-size: 12px;
+    color: #505050;
+}
+
+a {
+    color: #505050;
+    text-decoration: none;
+}
+
+#mainName {
+    float: left;
+    font-size: 28px;
+    line-height: 60px;
+    margin-left: 20px;
+}
+
+
+.push {
+    float: right;
+    padding: 20px;
+    width: 200px;
+}
+
+#msgtable {
+    width: 100%;
+    border: 0;
+    text-align: center;
+}
+
+#msgtable td {
+    border-collapse: collapse;
+    border-bottom: 1px solid #CCC;
+}
+
+.msg_list {
+    background-color: #FFF;
+    border-bottom: 1px solid #CCC;
+}
+
+#th td {
+    background: #1e7ca5;
+    color: #FFF;
+}
+
+.push_msg {
+    float: left;
+    /* display: inline; */
+    padding: 5px;
+    background: #00a9ec;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.back_msglist {
+    float: right;
+    margin-left: 20px;
+    /* display: inline;  */
+    padding: 5px;
+    background: #00a9ec;
+    color: #FFF;
+    cursor: pointer;
+}

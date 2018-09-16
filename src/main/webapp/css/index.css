@@ -1,0 +1,45 @@
+body {
+	background-color: #006290;
+	margin: 0px;
+}
+
+body .login {
+	width: 100%;
+	margin: auto;
+	background-color: #003366;
+	padding: 20px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+body .table{
+	width: 600; 
+	border: 0; 
+	margin: auto;
+}
+
+input{
+	border-radius: 5px;
+}
+.labe{
+	 text-align:right;
+	 background-color: #003366;
+}
+body, td, th {
+	font-family: Arial, Helvetica, microsoft yahei, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+#logintitle {
+	width: 600px;
+	margin: auto;
+	margin-top: 200px;
+	font-family: Arial, Helvetica, microsoft yahei, sans-serif;
+	color: #FFF;
+	font-size: 28px;
+	height: 80px;
+	line-height: 80px
+}
+
+

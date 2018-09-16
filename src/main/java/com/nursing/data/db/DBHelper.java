@@ -44,10 +44,10 @@ public class DBHelper {
 	/**
 	 * 重置数据库连接
 	 */
-	public static void resetConnection() {
+	public static Connection resetConnection() {
 		loadDBConfig();
 		sConnection = null;
-		getConnection();
+		return getConnection();
 	}
 
 	private static void loadDBConfig() {

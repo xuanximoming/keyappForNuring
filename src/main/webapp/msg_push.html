@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>医院信息化·移动护理通用接口API设置</title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/msg_push.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/msg_push.css">
+</head>
+
+<body>
+	<div>
+		<div id="mainName">消息推送管理</div>
+		<div class="wrapper">
+			<div class="push_msg">发布消息推送</div>
+			<div class="back_msglist">返回消息列表</div>
+		</div>
+	</div>
+	<div>
+		<form name="form1" method="post" action="messages.do?act=save">
+			<table id="push_order">
+				<tr>
+					<td width="24%" class="msg_right">推送消息类型</td>
+					<td width="68%"><select name="save_msgtype">
+							<option value="0">群发消息</option>
+							<option value="2">群发任务</option>
+						</select></td>
+					<td width="8%">&nbsp;</td>
+				</tr>
+				<tr>
+					<td class="msg_right">推送对象</td>
+					<td><select name="save_msgtouser">
+							<option value="0">所有护士</option>
+						</select></td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td class="msg_right">消息标题</td>
+					<td><input name="save_msgtitle" type="text" size="59" value=""></td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td class="msg_right">消息内容</td>
+					<td><textarea name="save_msgmemo" cols="60" rows="6"></textarea></td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td class="msg_right">推送时间</td>
+					<td><input type="text" name="save_datetime" id="datetime" value=""></td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td class="msg_right"><input type="hidden" name="save_msgID" value=""></td>
+					<td><input type="submit" name="Submit" value="提交"></td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+</body>
+
+</html>

@@ -490,7 +490,7 @@ public class FileUtils {
             return false;
         }
 
-        File file = new File(filePath);
+        File file = new File(filePath); 
         return (file.exists() && file.isFile());
     }
 

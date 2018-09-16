@@ -21,7 +21,7 @@ body {
 }
 
 body, td, th {
-	border:1px solid black;
+	border: 1px solid black;
 	font-family: Arial, Helvetica, microsoft yahei, sans-serif;
 	font-size: 12px;
 	color: #505050;

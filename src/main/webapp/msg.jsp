@@ -13,7 +13,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>医院信息化·移动护理通用接口API设置</title>
 <style type="text/css">
-<!--
+
 body {
 	margin: 20px;
 }
@@ -44,9 +44,8 @@ a {
 #th td {
 	background: #1e7ca5;
 	color: #FFF
-	
 }
--->
+
 </style>
 
 </head>
@@ -79,7 +78,7 @@ a {
 			</tr>
 
 			<%
-				String realPath = request.getSession().getServletContext().getRealPath("/push");//getRealPath();
+				String realPath = request.getSession().getServletContext().getRealPath("/push");
 
 				File filePush = new File(realPath);
 				if (!filePush.exists()) {

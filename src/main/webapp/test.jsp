@@ -5,12 +5,12 @@
   Time: 21:52
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <html>
 <head>
-    <title>ApiTest</title>
+<title>ApiTest</title>
 </head>
 <body>
-<a href="api/login" >login测试</a>
+	<a href="api/login">login测试</a>
 </body>
 </html>
